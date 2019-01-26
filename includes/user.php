@@ -8,7 +8,7 @@
 
 include('includes/tweet.php');
 
-class User {
+class user {
 
     private $userId;
     private $userName;

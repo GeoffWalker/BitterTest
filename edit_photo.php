@@ -6,7 +6,7 @@ if (isset($_GET["msg"])){
     echo "<script>alert('" . $_GET["msg"] . "')</script>";
 }
 
-include("Includes/Header.php");
+include("includes/header.php");
 ?>
 
 <html lang="en">
@@ -26,9 +26,9 @@ include("Includes/Header.php");
     <link href="includes/starter-template.css" rel="stylesheet">
 	<!-- Bootstrap core JavaScript-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	
+
     <script src="includes/bootstrap.min.js"></script>
-    
+
 	<script type="text/javascript">
 		//any JS validation you write can go here
 	</script>
@@ -39,7 +39,7 @@ include("Includes/Header.php");
 	<BR><BR>
     <div class="container">
 		<div class="row">
-			
+
 			<div class="main-login main-center">
                             <form action="edit_photo_proc.php" method="post" enctype="multipart/form-data">
                                 Select your image:

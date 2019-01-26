@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
-include("includes/User.php");
+include("includes/user.php");
 
-User::userLogin($_POST["username"], $_POST["password"]);
+user::userLogin($_POST["username"], $_POST["password"]);
 
 ?>

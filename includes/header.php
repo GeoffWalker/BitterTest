@@ -1,5 +1,5 @@
 <?php
-    include('includes/User.php');
+    include('includes/user.php');
 ?>
 
 <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">

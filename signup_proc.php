@@ -1,7 +1,7 @@
-<?php 
+<?php
 session_start();
-include('includes/User.php');
-include('includes/Functions.php');
+include('includes/user.php');
+include('includes/functions.php');
 
 //grab username and email from form
 $username = $_POST["username"];
@@ -22,7 +22,7 @@ else if (mysqli_num_rows($result2) > 0){
     header("location:signup.php?msg=$msg");
 }
 else
-{    
+{
     $fname = $_POST["firstname"];
     $lname = $_POST["lastname"];
     $email = $_POST["email"];
@@ -37,18 +37,15 @@ else
     $url = $_POST["url"];
     $description = $_POST["desc"];
     $location = $_POST["location"];
-    
+
     if (verifyPostal($postal, $province)){
-       User::createNewUser($fname, $lname, $uname, $pword, $address, $province, $postal, $phone, $email, $url, $description, $location); 
+       user::createNewUser($fname, $lname, $uname, $pword, $address, $province, $postal, $phone, $email, $url, $description, $location);
     }
     else{
         $msg = "Your postal code does not match your province.";
         header("location:signup.php?msg=$msg");
     }
-    
+
 }
-
-
-
 
 ?>

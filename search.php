@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<?php 
+<?php
     session_start();
-    include('includes/Header.php');
-    include('includes/Functions.php');
+    include('includes/header.php');
+    include('includes/functions.php');
 ?>
 
 <?php
@@ -30,9 +30,9 @@ if (!isset($_SESSION["SESS_MEMBER_ID"])) {
     <link href="includes/starter-template.css" rel="stylesheet">
 	<!-- Bootstrap core JavaScript-->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-	
+
     <script src="includes/bootstrap.min.js"></script>
-    
+
 	<script type="text/javascript">
 		//any JS validation you write can go here
 	</script>
@@ -43,22 +43,22 @@ if (!isset($_SESSION["SESS_MEMBER_ID"])) {
     <div class="container">
         <div class="row">
             <h4>Users Found</h4><hr width="100%"><br>
-            <div class="col-md-6">  
+            <div class="col-md-6">
                 <?php
-                    User::SearchUser($_GET["search"]);
+                    user::SearchUser($_GET["search"]);
                 ?>
             </div>
         </div>
-        
+
         <div class="row">
             <h4>Tweets Found</h4><hr width="100%"><br>
-            <div class="col-md-6">    
+            <div class="col-md-6">
                 <?php
-                    Tweet::SearchTweets($_GET["search"]);
+                    tweet::SearchTweets($_GET["search"]);
                 ?>
             </div>
         </div> <!-- end row -->
     </div><!-- /.container -->
-    
+
   </body>
 </html>

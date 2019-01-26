@@ -1,9 +1,9 @@
 <?php
 
 session_start();
-include('includes/Tweet.php');
+include('includes/tweet.php');
 
-Tweet::Like($_GET["tweet_id"]);
+tweet::Like($_GET["tweet_id"]);
 
 header("location:index.php");
 
