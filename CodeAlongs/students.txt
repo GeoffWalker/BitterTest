@@ -1,0 +1,4 @@
+Geoff |  Fredericton   | 4.0
+Peter |  Fredericton   | 3.9999
+Seth  |  Moncton       | 4.3
+Coles |  No Mans Land  | 0.01
